@@ -14,7 +14,7 @@ def charshift(unformatted_string):
     resultlist = list()  # create list for results
     for character in list(unformatted_string):  # iterate through each character of the string
         if str.isalpha(character):  # check if we are dealing with letters only
-            charval = ord(character)  # convert the character to it's unicode integer value
+            charval = ord(character)  # convert the character to its unicode integer value
             if charval > 120:  # if the integer of the value character is higher than 120 (the letter x)
                 resultlist.append(chr(charval - 24))  # subtract 24 from the integer to keep within alphabetical range
             else:
